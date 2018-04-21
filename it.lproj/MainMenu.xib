@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291m" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,13 +22,13 @@
                 <menuItem title="SelfControl" id="56">
                     <menu key="submenu" title="SelfControl" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="Informazioni su SelfControl" id="58">
+                            <menuItem title="About SelfControl" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Controlla aggiornamenti..." id="732">
+                            <menuItem title="Check for updates..." id="732">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="checkForUpdates:" target="731" id="733"/>
@@ -50,12 +50,12 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Preferenze…" keyEquivalent="," id="614">
+                            <menuItem title="Preferences…" keyEquivalent="," id="614">
                                 <connections>
-                                    <action selector="openPreferences:" target="469" id="904"/>
+                                    <action selector="openPreferences:" target="469" id="907"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Modifica lista di blocco..." keyEquivalent="d" id="503">
+                            <menuItem title="Edit Blacklist..." keyEquivalent="d" id="503">
                                 <connections>
                                     <action selector="showDomainList:" target="469" id="515"/>
                                 </connections>
@@ -63,24 +63,24 @@
                             <menuItem isSeparatorItem="YES" id="143">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Servizi" id="131">
-                                <menu key="submenu" title="Servizi" systemMenu="services" id="130"/>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="144">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Nascondi SelfControl" keyEquivalent="h" id="134">
+                            <menuItem title="Hide SelfControl" keyEquivalent="h" id="134">
                                 <connections>
                                     <action selector="hide:" target="-1" id="367"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Nascondi altre" keyEquivalent="h" id="145">
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                 <connections>
                                     <action selector="hideOtherApplications:" target="-1" id="368"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Mostra tutte" id="150">
+                            <menuItem title="Show All" id="150">
                                 <connections>
                                     <action selector="unhideAllApplications:" target="-1" id="370"/>
                                 </connections>
@@ -101,7 +101,7 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Esci da SelfControl" keyEquivalent="q" id="136" userLabel="1111">
+                            <menuItem title="Quit SelfControl" keyEquivalent="q" id="136" userLabel="1111">
                                 <connections>
                                     <action selector="terminate:" target="-3" id="449"/>
                                 </connections>
@@ -113,18 +113,18 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="File" id="866">
                         <items>
-                            <menuItem title="Chiudi finestra" keyEquivalent="w" id="867">
+                            <menuItem title="Close Window" keyEquivalent="w" id="867">
                                 <connections>
                                     <action selector="performClose:" target="-1" id="886"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="883"/>
-                            <menuItem title="Apri lista di blocco…" keyEquivalent="o" id="877">
+                            <menuItem title="Open Blocklist…" keyEquivalent="o" id="877">
                                 <connections>
                                     <action selector="open:" target="469" id="884"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Salva lista di blocco..." keyEquivalent="s" id="873">
+                            <menuItem title="Save Blocklist..." keyEquivalent="s" id="873">
                                 <connections>
                                     <action selector="save:" target="469" id="882"/>
                                 </connections>
@@ -132,56 +132,56 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Composizione" id="766">
+                <menuItem title="Edit" id="766">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Composizione" id="767">
+                    <menu key="submenu" title="Edit" id="767">
                         <items>
-                            <menuItem title="Annulla" keyEquivalent="z" id="768">
+                            <menuItem title="Undo" keyEquivalent="z" id="768">
                                 <connections>
                                     <action selector="undo:" target="-1" id="811"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Ripristina originale" keyEquivalent="Z" id="769">
+                            <menuItem title="Redo" keyEquivalent="Z" id="769">
                                 <connections>
                                     <action selector="redo:" target="-1" id="812"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="770"/>
-                            <menuItem title="Taglia" keyEquivalent="x" id="771">
+                            <menuItem title="Cut" keyEquivalent="x" id="771">
                                 <connections>
                                     <action selector="cut:" target="-1" id="813"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Copia" keyEquivalent="c" id="772">
+                            <menuItem title="Copy" keyEquivalent="c" id="772">
                                 <connections>
                                     <action selector="copy:" target="-1" id="809"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Incolla" keyEquivalent="v" id="773">
+                            <menuItem title="Paste" keyEquivalent="v" id="773">
                                 <connections>
                                     <action selector="paste:" target="-1" id="810"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Elimina" id="775">
+                            <menuItem title="Delete" id="775">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="delete:" target="-1" id="814"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Seleziona tutto" keyEquivalent="a" id="776">
+                            <menuItem title="Select All" keyEquivalent="a" id="776">
                                 <connections>
                                     <action selector="selectAll:" target="-1" id="815"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="777"/>
-                            <menuItem title="Voce" id="780">
+                            <menuItem title="Speech" id="780">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Voce" id="781">
+                                <menu key="submenu" title="Speech" id="781">
                                     <items>
-                                        <menuItem title="Inizia riproduzione" id="782">
+                                        <menuItem title="Start Speaking" id="782">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
-                                        <menuItem title="Interrompi riproduzione" id="783">
+                                        <menuItem title="Stop Speaking" id="783">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                     </items>
@@ -190,10 +190,10 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Finestra" id="19">
-                    <menu key="submenu" title="Finestra" systemMenu="window" id="24">
+                <menuItem title="Window" id="19">
+                    <menu key="submenu" title="Window" systemMenu="window" id="24">
                         <items>
-                            <menuItem title="Contrai" keyEquivalent="m" id="23">
+                            <menuItem title="Minimize" keyEquivalent="m" id="23">
                                 <connections>
                                     <action selector="performMiniaturize:" target="-1" id="37"/>
                                 </connections>
@@ -201,7 +201,7 @@
                             <menuItem isSeparatorItem="YES" id="92">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Porta tutto in primo piano" id="5">
+                            <menuItem title="Bring All to Front" id="5">
                                 <connections>
                                     <action selector="arrangeInFront:" target="-1" id="39"/>
                                 </connections>
@@ -209,17 +209,17 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Aiuto" id="899">
+                <menuItem title="Help" id="899">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Aiuto" systemMenu="help" id="900">
+                    <menu key="submenu" title="Help" systemMenu="help" id="900">
                         <items>
-                            <menuItem title="Get Started" id="905">
+                            <menuItem title="Get Started" id="908">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="showGetStartedWindow:" target="469" id="906"/>
+                                    <action selector="showGetStartedWindow:" target="469" id="910"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="FAQ su SelfControl" keyEquivalent="?" id="901">
+                            <menuItem title="SelfControl FAQ" keyEquivalent="?" id="901">
                                 <connections>
                                     <action selector="openFAQ:" target="469" id="903"/>
                                 </connections>
@@ -233,35 +233,34 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="451" y="331" width="620" height="111"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="620" height="111"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <slider verticalHuggingPriority="750" id="465">
+                    <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="465">
                         <rect key="frame" x="18" y="41" width="584" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="aHf-Ya-8uh"/>
+                        </constraints>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1440" doubleValue="30" tickMarkPosition="below" numberOfTickMarks="97" allowsTickMarkValuesOnly="YES" sliderType="linear" id="466">
                             <font key="font" size="12" name="Helvetica"/>
                         </sliderCell>
                         <connections>
                             <action selector="updateTimeSliderDisplay:" target="469" id="481"/>
-                            <binding destination="627" name="value" keyPath="values.BlockDuration" id="888"/>
                         </connections>
                     </slider>
-                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="478">
-                        <rect key="frame" x="17" y="16" width="460" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="30 minuti" id="479">
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="478">
+                        <rect key="frame" x="17" y="16" width="72" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="30 minutes" id="479">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" id="541">
-                        <rect key="frame" x="260" y="71" width="100" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Avvio" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" inset="2" id="542">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="541">
+                        <rect key="frame" x="288" y="71" width="44" height="25"/>
+                        <buttonCell key="cell" type="roundTextured" title="Start" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" inset="2" id="542">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
@@ -272,10 +271,9 @@ DQ
                             <action selector="addBlock:" target="469" id="680"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" id="543">
-                        <rect key="frame" x="441" y="9" width="159" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Modifica lista di blocco" bezelStyle="texturedRounded" alignment="center" borderStyle="border" inset="2" id="544">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="543">
+                        <rect key="frame" x="508" y="9" width="92" height="25"/>
+                        <buttonCell key="cell" type="roundTextured" title="Edit Blacklist" bezelStyle="texturedRounded" alignment="center" borderStyle="border" allowsMixedState="YES" inset="2" id="544">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -284,10 +282,21 @@ DQ
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="543" secondAttribute="trailing" constant="20" id="0Wn-BM-hpf"/>
+                    <constraint firstItem="465" firstAttribute="trailing" secondItem="543" secondAttribute="trailing" id="Eqk-xh-OIc"/>
+                    <constraint firstItem="541" firstAttribute="centerX" secondItem="372" secondAttribute="centerX" id="KyZ-Mc-sxV"/>
+                    <constraint firstAttribute="bottom" secondItem="543" secondAttribute="bottom" constant="11" id="MQd-6b-WA4"/>
+                    <constraint firstItem="478" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="19" id="WdA-X8-Sm5"/>
+                    <constraint firstAttribute="bottom" secondItem="478" secondAttribute="bottom" constant="16" id="bCa-zH-2yY"/>
+                    <constraint firstItem="465" firstAttribute="centerX" secondItem="541" secondAttribute="centerX" id="fF7-jW-hAj"/>
+                    <constraint firstItem="541" firstAttribute="top" secondItem="372" secondAttribute="top" constant="16" id="jXt-Fy-vdp"/>
+                    <constraint firstItem="478" firstAttribute="top" secondItem="465" secondAttribute="bottom" constant="9" id="sph-T0-uxn"/>
+                </constraints>
             </view>
             <contentBorderThickness minY="0.0" maxY="90"/>
             <connections>
-                <outlet property="delegate" destination="469" id="484"/>
+                <outlet property="delegate" destination="469" id="905"/>
             </connections>
         </window>
         <customObject id="469" customClass="AppController">
