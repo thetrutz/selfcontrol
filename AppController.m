@@ -55,8 +55,8 @@ NSString* const kSelfControlErrorDomain = @"SelfControlErrorDomain";
 									  @"BlockAsWhitelist": @NO,
 									  @"BadgeApplicationIcon": @YES,
 									  @"AllowLocalNetworks": @YES,
-									  @"MaxBlockLength": @1440,
-									  @"BlockLengthInterval": @15,
+									  @"MaxBlockLength": @14400,
+									  @"BlockLengthInterval": @120,
 									  @"WhitelistAlertSuppress": @NO,
 									  @"GetStartedShown": @NO};
 
